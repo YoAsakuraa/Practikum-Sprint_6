@@ -24,7 +24,9 @@ public class BasePage {
 
     protected void SendKeys(By locator, String text) {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-        if (!element.getAttribute("value").isEmpty()) {
+        String currentValue = element.getAttribute("value");
+
+        if (currentValue != null && !currentValue.isEmpty()) {
             element.clear();
         }
 

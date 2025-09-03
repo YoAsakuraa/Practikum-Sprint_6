@@ -7,6 +7,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class QuestionsPage  extends BasePage {
 
 
+
+    //Не стал удалять эти локаторы , но я потом пришел к мысли о том что лучше реализовать универсальные
+    //Сначала были такие, но не оч универсально
+
+
     //Раздел "Вопросы о важном"
     //Кнопка и текст вопроса 1
     private final By buttonQuestionNumber1 = By.id("accordion__heading-0");
